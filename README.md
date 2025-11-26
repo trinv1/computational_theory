@@ -21,6 +21,23 @@ In Problem 1, we are implementing the SHA-256 logical functions (Parity, Ch, Maj
 In Problem 2, we are generating the first 64 prime numbers using The Sieve of Eratosthenes Algorithm for speed and memory efficiency, and computing the SHA-256 constants from the fractional parts of their cube roots. These constants are mathematically derived values defined by the Secure Hash Standard to ensure non-linearity and to prevent predictable patterns in the hash process, ensuring that each round of the computation is different. 
 
 ### Problem 3 
+#### Block Parsing and Message Padding
+In Problem 3, we implement message padding and block parsing according to Sections 5.1.1 and 5.2.1 of the Secure Hash Standard.
+SHA-256 can only process data in fixed-size 512-bit (64-byte) blocks, so before hashing can occur, any input message must be:<br>
+Appended with a single ‘1’ bit<br>
+Padded with ‘0’ bits so that the final block has space for:<br>
+A 64-bit big-endian integer that stores the length of the original message in bits<br>
+The aim of this padding step is to guarantee an unambiguous and consistent message format, ensuring that two different messages can never hash to the same value.
+
+### Problem 4
+#### Hashing
+
+### Problem 5
+#### Passwords
+
+
+## URL's, Tools and Packages Used
+
 
 
 
