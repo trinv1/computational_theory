@@ -51,7 +51,7 @@ Markdown cell `Find Prime Function` in `Problem 2`:<br>
 2. [Prime number function in lecturer repo](https://github.com/ianmcloughlin/computational-theory/blob/main/materials/prime_numbers.ipynb): A function provided by lecturer to find first 64 prime numbers
 
 3. [NumPy vectorization](https://www.geeksforgeeks.org/numpy/vectorized-operations-in-numpy/) and [Python slice function](https://www.geeksforgeeks.org/python/python-slice-function/): Resources used to aid understanding  of what numpy vectorization and python slicing was
-------------------------
+
 Markdown cell `Frac Cube Function` in `Problem 2`:<br>
 1. [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of NumPy's functions to get the cube root of a number and split it into its fractional and integer parts
 
@@ -59,9 +59,12 @@ Markdown cell `Frac Cube Function` in `Problem 2`:<br>
 ------------------------
 Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
-------------------------
+
 Markdown cell `Block Parse Function` in `Problem 3`:<br>
 * [Padding explanation](https://enlear.academy/blockchain-deep-dive-into-sha-256-secure-hash-algorithm-256-bit-824ac0e90b24): Resource used to aid understanding of padding process and provide explanantion of padding under `Purpose:` in markdown cell.
+
+Testing code blocks under `Problem 3`:<br>
+[ASCII to Hex](https://www.rapidtables.com/convert/number/ascii-to-hex.html): Used to understand 0x41 representation in ASCII
 
 
 
