@@ -54,8 +54,6 @@ Markdown cell `Find Prime Function` in `Problem 2`:<br>
 
 Markdown cell `Frac Cube Function` in `Problem 2`:<br>
 1. [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of NumPy's functions to get the cube root of a number and split it into its fractional and integer parts
-
-2. [Hexadecimal format](https://blog.finxter.com/5-best-ways-to-convert-a-list-of-ints-to-hex-in-python/#:~:text=The%20built%2Din%20Python%20function,each%20integer%20in%20the%20list.): Resource used to figure out how to convert list to hex format
 ------------------------
 Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
