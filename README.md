@@ -61,7 +61,7 @@ Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
 
 Markdown cell `Block Parse Function` in `Problem 3`:<br>
-* [Padding explanation](https://enlear.academy/blockchain-deep-dive-into-sha-256-secure-hash-algorithm-256-bit-824ac0e90b24): Resource used to aid understanding of padding process and provide explanantion of padding under `Purpose:` in markdown cell.
+* [Padding explanation](https://enlear.academy/blockchain-deep-dive-into-sha-256-secure-hash-algorithm-256-bit-824ac0e90b24): Resource used to aid understanding of padding process and provide explanation of padding under `Purpose:` in markdown cell.
 
 Testing code blocks under `Problem 3`:<br>
 [ASCII to Hex](https://www.rapidtables.com/convert/number/ascii-to-hex.html): Used to understand 0x41 representation in ASCII
