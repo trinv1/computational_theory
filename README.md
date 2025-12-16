@@ -38,8 +38,11 @@ In Problem 4, we implement the SHA-256 compression stage that produces the final
 
 
 ## URL's, Tools and Packages Used
+Markdown cell `SHA-1 Functions` in `Problem 1`:<br>
+* [SHA-1 explanation](https://github.com/ianmcloughlin/computational-theory/blob/main/materials/prime_numbers.ipynb): Resource helped develop an initial understanding of the SHA-1 logical functions and how they form the foundation for the SHA-2 family, including SHA-256<br>
+
 Markdown cell `SHA-2 Functions` in `Problem 1`:<br>
-* [SHA-224 and SHA-256 explanation](https://mojoauth.com/compare-hashing-algorithms/sha-224-vs-sha-256/): This resource helped develop my understanding of how bitwise logical functions contribute to the 
+* [SHA-224 and SHA-256 explanation](https://mojoauth.com/compare-hashing-algorithms/sha-224-vs-sha-256/): Resource helped develop understanding of how bitwise logical functions contribute to the 
 non-linearity of SHA-256, making the hash output unpredictable and resistant to reversal attacks.
 
 Markdown cell `Rotate Right Function` in `Problem 1`:<br>
@@ -54,7 +57,7 @@ Markdown cell `Find Prime Function` in `Problem 2`:<br>
 3. [NumPy vectorization](https://www.geeksforgeeks.org/numpy/vectorized-operations-in-numpy/) and [Python slice function](https://www.geeksforgeeks.org/python/python-slice-function/): Resources used to aid understanding  of what numpy vectorization and python slicing was
 
 Markdown cell `Frac Cube Function` in `Problem 2`:<br>
-1. [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of NumPy's functions to get the cube root of a number and split it into its fractional and integer parts
+* [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of NumPy's functions to get the cube root of a number and split it into its fractional and integer parts
 ------------------------
 Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
@@ -64,6 +67,21 @@ Markdown cell `Block Padding Function` in `Problem 3`:<br>
 
 Testing code blocks under `Problem 3`:<br>
 [ASCII to Hex](https://www.rapidtables.com/convert/number/ascii-to-hex.html): Used to understand 0x41 representation in ASCII
+
+Markdown cell `Message Schedule` in `Problem 4`:<br>
+
+1. [Hashing explanation](https://www.simplilearn.com/tutorials/cyber-security-tutorial/sha-256-algorithm): Resource used to aid understanding of hashing process and written explanation
+
+2. [int and 0xffffffff understanding](https://chatgpt.com/): OpenAI's GPT-5 model was used to debug NumPy overflow errors and aid understanding of int use and computational price of using modulo 2^32 over single bitwise operation
+
+
+Markdown cell `Problem 5: Passwords`:<br>
+1. [Dictionary-based attack](https://pentest.co.uk/insights/cracking-passwords/#:~:text=Attackers/Testers%20can%20try%20to%20discover%20the%20original,compares%20the%20resulting%20hashes%20to%20the%20original.): Resource was used to come up with idea for cracking password hashes
+
+2. [List of Most Common Passwords of 2025](https://paulreynolds.uk/most-common-passwords/): Resource used to perform dictonary attack by inputting the first 81 passwords to try and crack hashes
+
+3. [Salting](https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/): Resource used to come up with way to improve hashing to prevent dictionary attacks 
+
 
 
 
