@@ -31,6 +31,7 @@ The aim of this padding step is to guarantee an unambiguous and consistent messa
 
 ### Problem 4
 #### Hashing
+In Problem 4, we implement the SHA-256 compression stage that produces the final hash value. Each padded 512-bit message block is processed through 64 rounds of bitwise and arithmetic operations that update the hash state. The output of each block is combined with the current hash state and used as input for the next block until the final 256-bit hash is generated.
 
 ### Problem 5
 #### Passwords
@@ -58,7 +59,7 @@ Markdown cell `Frac Cube Function` in `Problem 2`:<br>
 Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
 
-Markdown cell `Block Parse Function` in `Problem 3`:<br>
+Markdown cell `Block Padding Function` in `Problem 3`:<br>
 * [Padding explanation](https://enlear.academy/blockchain-deep-dive-into-sha-256-secure-hash-algorithm-256-bit-824ac0e90b24): Resource used to aid understanding of padding process and provide explanation of padding under `Purpose:` in markdown cell.
 
 Testing code blocks under `Problem 3`:<br>
