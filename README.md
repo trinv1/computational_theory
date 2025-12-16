@@ -1,12 +1,13 @@
 # Computational Theory
 
 ## Introduction 
-This project covers the computational concepts that support the [Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf), in particular the SHA-256 hashing algorithm. This notebook aims to explore the various computational and mathematical operations that are involved in cryptographic systems. 
+This project covers the computational concepts that support the [Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf), in particular the SHA-256 hashing algorithm. This notebook explores the computational and mathematical operations behind cryptographic hashing. 
 Each problem focuses on a different stage of the SHA-256 process, from bitwise operations to generating constants and performing hashing computations.
 
 ## Requirements
 This project requires the following Python packages:<br>
 * **numpy**<br>
+* **math**
 
 ### To install these dependencies:
 **pip install -r requirements.txt**
@@ -14,7 +15,7 @@ This project requires the following Python packages:<br>
 ## Overview 
 ### Problem 1
 #### Binary Words and Operations
-In Problem 1, we are implementing the SHA-256 logical functions (Parity, Ch, Maj, Σ₀, Σ₁, σ₀, σ₁) using NumPy to perform 32-bit operations. SHA-256 operates through these logical functions and bitwise operations, providing a high level of security that is resistant to collisions and **pre-image attacks** (original message before its been hashed) ([SHA-256 logical functions explanation](https://mojoauth.com/compare-hashing-algorithms/sha-256-vs-sha-384/)).
+In Problem 1, we are implementing the SHA-256 logical functions (Parity, Ch, Maj, Σ₀, Σ₁, σ₀, σ₁) using NumPy to perform 32-bit operations. SHA-256 operates through these logical functions and bitwise operations, providing a high level of security that is resistant to collisions and **pre-image attacks** (original message before its been hashed.
 
 ### Problem 2
 #### Fraction Parts of Cube Roots
@@ -35,14 +36,15 @@ In Problem 4, we implement the SHA-256 compression stage that produces the final
 
 ### Problem 5
 #### Passwords
+In Problem 5, the passwords corresponding to the given SHA-256 hashes were recovered using a dictionary attack. This highlights the weakness of using unsalted SHA-256 for password storage and the need for stronger password-hashing techniques.
 
 
-## URL's, Tools and Packages Used
+## URL's and Tools Used
 Markdown cell `SHA-1 Functions` in `Problem 1`:<br>
-* [SHA-1 explanation](https://github.com/ianmcloughlin/computational-theory/blob/main/materials/prime_numbers.ipynb): Resource helped develop an initial understanding of the SHA-1 logical functions and how they form the foundation for the SHA-2 family, including SHA-256<br>
+* [SHA-1 explanation](https://github.com/ianmcloughlin/computational-theory/blob/main/materials/prime_numbers.ipynb): Resource helped develop an initial understanding of the SHA-1 logical functions and how they form the foundation for the SHA-2 family, including SHA-256.<br>
 
 Markdown cell `SHA-2 Functions` in `Problem 1`:<br>
-* [SHA-224 and SHA-256 explanation](https://mojoauth.com/compare-hashing-algorithms/sha-224-vs-sha-256/): Resource helped develop understanding of how bitwise logical functions contribute to the 
+* [SHA-256 explanation](https://mojoauth.com/compare-hashing-algorithms/sha-224-vs-sha-256/): Resource helped develop understanding of how bitwise logical functions contribute to the 
 non-linearity of SHA-256, making the hash output unpredictable and resistant to reversal attacks.
 
 Markdown cell `Rotate Right Function` in `Problem 1`:<br>
@@ -57,7 +59,7 @@ Markdown cell `Find Prime Function` in `Problem 2`:<br>
 3. [NumPy vectorization](https://www.geeksforgeeks.org/numpy/vectorized-operations-in-numpy/) and [Python slice function](https://www.geeksforgeeks.org/python/python-slice-function/): Resources used to aid understanding  of what numpy vectorization and python slicing was
 
 Markdown cell `Frac Cube Function` in `Problem 2`:<br>
-* [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of NumPy's functions to get the cube root of a number and split it into its fractional and integer parts
+* [Cube root](https://www.geeksforgeeks.org/python/numpy-cbrt-python/) and [np.modf()](https://www.geeksforgeeks.org/python/python-modf-function/): Resources used to aid understanding of numpy's functions to get the cube root of a number and split it into its fractional and integer parts
 ------------------------
 Markdown cell `File to Blocks Function` in `Problem 3`:<br>
 * [Generator yield explanation](https://www.datacamp.com/tutorial/python-generators): Resource used to understand how generators avoid memory issues and provide context to functions purpose
@@ -68,17 +70,17 @@ Markdown cell `Block Padding Function` in `Problem 3`:<br>
 Testing code blocks under `Problem 3`:<br>
 [ASCII to Hex](https://www.rapidtables.com/convert/number/ascii-to-hex.html): Used to understand 0x41 representation in ASCII
 
+---------------------------
 Markdown cell `Message Schedule` in `Problem 4`:<br>
 
 1. [Hashing explanation](https://www.simplilearn.com/tutorials/cyber-security-tutorial/sha-256-algorithm): Resource used to aid understanding of hashing process and written explanation
 
 2. [int and 0xffffffff understanding](https://chatgpt.com/): OpenAI's GPT-5 model was used to debug NumPy overflow errors and aid understanding of int use and computational price of using modulo 2^32 over single bitwise operation
-
-
+-----------------------------
 Markdown cell `Problem 5: Passwords`:<br>
 1. [Dictionary-based attack](https://pentest.co.uk/insights/cracking-passwords/#:~:text=Attackers/Testers%20can%20try%20to%20discover%20the%20original,compares%20the%20resulting%20hashes%20to%20the%20original.): Resource was used to come up with idea for cracking password hashes
 
-2. [List of Most Common Passwords of 2025](https://paulreynolds.uk/most-common-passwords/): Resource used to perform dictonary attack by inputting the first 81 passwords to try and crack hashes
+2. [List of Most Common Passwords of 2025](https://paulreynolds.uk/most-common-passwords/): Resource used to perform dictionary-based attack by inputting the first 81 passwords to try and crack hashes
 
 3. [Salting](https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/): Resource used to come up with way to improve hashing to prevent dictionary attacks 
 
